@@ -15,10 +15,11 @@ namespace MarketAutomation
     {
           
         MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=Market;Uid=root;Pwd='';");
+        
         public Form2()
         {
             InitializeComponent();
-            
+            dateTimePicker1.Value = DateTime.Now;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,8 +44,29 @@ namespace MarketAutomation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ConnectionClass.baglanti();
-            ConnectionClass.Command("insert into product () values ()");
+            if (textBox1.Text!=""&& textBox2.Text != "" && textBox3.Text != "" && textBox5.Text != "" && textBox6.Text != "" )
+            {
+                string BarkodNo = textBox1.Text;
+                string productName = textBox2.Text;
+                string category = comboBox1.Text;
+                string skt = Convert.ToString(dateTimePicker1.Value);
+                string buying = textBox5.Text;
+                string sales = textBox6.Text;
+                string kdv = textBox3.Text;
+                ConnectionClass.baglanti();
+                ConnectionClass.Command("insert into product (BarkodNo,ProductName,SKT,buying,sales,kdv,category) values ('" + BarkodNo + "','" + productName + "','" + skt + "','" + buying + "','" + sales + "','" + kdv + "','" + category + "')");
+                MessageBox.Show("kayıt başarılı");
+                textBox1.Text = string.Empty;
+                textBox2.Text = string.Empty;
+                textBox3.Text = string.Empty;
+                textBox5.Text = string.Empty;
+                textBox6.Text = string.Empty;
+            }
+            else
+            {
+                MessageBox.Show("eksik alan");
+            }
+            
         }
     }
 }
