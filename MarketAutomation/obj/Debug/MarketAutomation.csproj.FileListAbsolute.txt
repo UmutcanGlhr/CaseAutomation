@@ -60,3 +60,5 @@ C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\bin\Debug\Ubiety.Dn
 C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\bin\Debug\Renci.SshNet.dll
 C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\bin\Debug\MySql.Data.xml
 C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\obj\Debug\MarketAutomation.personelAdd.resources
+C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\bin\Debug\itextsharp.dll
+C:\Users\asus\source\repos\MarketAutomation\MarketAutomation\bin\Debug\itextsharp.xml

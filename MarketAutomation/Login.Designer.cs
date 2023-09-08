@@ -30,12 +30,12 @@ namespace MarketAutomation
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,17 @@ namespace MarketAutomation
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(283, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 59);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(65, 228);
@@ -69,6 +80,7 @@ namespace MarketAutomation
             // 
             this.textBox2.Location = new System.Drawing.Point(144, 144);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(162, 27);
             this.textBox2.TabIndex = 3;
             // 
@@ -96,16 +108,6 @@ namespace MarketAutomation
             this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kullanıcı Adı : ";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(283, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 59);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
